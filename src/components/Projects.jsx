@@ -1,26 +1,26 @@
-import { ExternalLink, Code, Rocket } from 'lucide-react'
+import { ExternalLink, Rocket } from 'lucide-react'
 
 const projects = [
   {
-    title: 'Interactive 3D Landing',
+    title: 'AI Chat Portfolio Assistant',
     description:
-      'A playful 3D hero with Spline integration, motion transitions, and smooth page sections.',
+      'A chat-based guide embedded in the portfolio that answers questions about my work and experience using vector search.',
+    tags: ['React', 'FastAPI', 'Pinecone', 'OpenAI'],
+    link: 'https://github.com/yourname/ai-portfolio-assistant',
+  },
+  {
+    title: '3D Product Showcase',
+    description:
+      'Interactive product viewer powered by Spline with camera paths, hotspots, and smooth scroll‑linked animations.',
     tags: ['React', 'Spline', 'Framer Motion'],
-    link: '#',
+    link: 'https://github.com/yourname/3d-product-showcase',
   },
   {
-    title: 'Design System Starter',
+    title: 'Realtime Finance Dashboard',
     description:
-      'A component library with accessible primitives, tokens, and docs powered by MDX.',
-    tags: ['TypeScript', 'Tailwind', 'Storybook'],
-    link: '#',
-  },
-  {
-    title: 'Realtime Dashboard',
-    description:
-      'A metrics dashboard with live data, charts, and dark mode. Built for speed and clarity.',
-    tags: ['FastAPI', 'React', 'WebSockets'],
-    link: '#',
+      'Live market data, alerts, and multi‑chart layouts with dark mode and keyboard navigation.',
+    tags: ['Next.js', 'WebSockets', 'Tailwind'],
+    link: 'https://github.com/yourname/realtime-finance-dashboard',
   },
 ]
 
@@ -47,9 +47,11 @@ export default function Projects() {
               </div>
               <a
                 href={project.link}
+                target="_blank"
+                rel="noreferrer"
                 className="mt-6 inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700"
               >
-                <span>View details</span>
+                <span>View repo</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
             </div>
